@@ -1,0 +1,116 @@
+@import 'settings';
+@import 'tabs';
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+@font-face {
+    font-family: 'BLOKKNeue-Regular';
+    src: url('../fonts/blokk-neue-regular/BLOKKNeue-Regular.eot');
+    src: url('../fonts/blokk-neue-regular/BLOKKNeue-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/blokk-neue-regular/BLOKKNeue-Regular.woff') format('woff'),
+         url('../fonts/blokk-neue-regular/BLOKKNeue-Regular.svg#BLOKKNeue-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.blokktext {
+	font-family: 'BLOKKNeue-Regular', sans-serif;
+	color: black;
+}
+body {
+	width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("../img/bg.png");
+}
+
+.project-explorer {
+	margin: 0 auto;
+	position: relative;
+	width: 700px;
+	height: auto;
+
+	.project-header-bg{
+		height: 400px;
+		width: 100%;
+		background: url("../img/album-art.jpg");
+		background-position: center center;
+		background-size: cover;
+		@include blur(1px);
+		@include border-radius(35px, 35px, 0, 0);
+		overflow: hidden;
+		display: block;
+	}// .project-header-bg
+
+	.project-header {
+		height: 400px;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@include border-radius(35px, 35px, 0, 0);
+		border: 2px solid black;
+		box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+		background: rgba(204, 204, 204, 0.3);
+
+		.project-title {
+			color: $project-title;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+			font-size: 3em;
+			margin: 260px 0 0 30px;
+		}// .project-title
+
+		.project-name {
+			color: $project-name;
+			text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+			margin: 0 0 0 60px;
+			font-style: italic;
+		}// .project-name
+
+		.parental-advisory {
+			float: right;
+			margin: -17px 10px 0 0;
+			height: 49px;
+			width: 72px;
+		}
+	}// .project-header
+
+	#projectContent {
+		margin: 0;
+		width: 100%;
+
+		.project-menu {
+			margin: 0;
+			width: 15%;
+			padding: 0;
+			background: #ccc;
+			transition: height 1s ease;
+
+			.ui-state-active {
+				width: 98%;
+				transition: width 0.5s ease;
+				border-right: none;
+			}
+
+			li {
+				width: 85%;
+				float: right;
+				transition: width 0.5s ease;
+				background: white;
+				border: 1px solid black;
+
+				a {
+
+
+				}// a
+			}// li
+		}// .project-menu
+
+		.project-view {
+			width: 84%;
+			float: right;
+			padding: 10px;
+			background: white;
+			box-sizing: border-box;
+			margin: 4px 0 50px 0;
+		}
+	}// #projectContent
+}// .project-explorer

@@ -1,0 +1,197 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+/* line 1, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical {
+  padding: 0;
+  width: 42em;
+}
+
+/* line 5, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+  border: none;
+}
+
+/* line 8, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+  float: left;
+  border-radius: 4px 0 0 4px;
+  border-right: 1px solid gray;
+}
+
+/* line 13, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+  clear: left;
+  width: 100%;
+  margin: 0.2em 0;
+  border: 1px solid gray;
+  border-width: 1px 0 1px 1px;
+  border-radius: 4px 0 0 4px;
+  overflow: hidden;
+  position: relative;
+  right: -2px;
+  z-index: 2;
+}
+
+/* line 25, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+  display: block;
+  width: 100%;
+  padding: 0.6em 1em;
+}
+
+/* line 30, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+  cursor: pointer;
+}
+
+/* line 33, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+  margin-bottom: 0.2em;
+  padding-bottom: 0;
+  border-right: 1px solid white;
+}
+
+/* line 38, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+  margin-bottom: 10px;
+}
+
+/* line 41, ../sass/_tabs.scss */
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+  position: relative;
+}
+
+@font-face {
+  font-family: 'BLOKKNeue-Regular';
+  src: url("../fonts/blokk-neue-regular/BLOKKNeue-Regular.eot");
+  src: url("../fonts/blokk-neue-regular/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/blokk-neue-regular/BLOKKNeue-Regular.woff") format("woff"), url("../fonts/blokk-neue-regular/BLOKKNeue-Regular.svg#BLOKKNeue-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 15, ../sass/main.scss */
+.blokktext {
+  font-family: 'BLOKKNeue-Regular', sans-serif;
+  color: black;
+}
+
+/* line 19, ../sass/main.scss */
+body {
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("../img/bg.png");
+}
+
+/* line 25, ../sass/main.scss */
+.project-explorer {
+  margin: 0 auto;
+  position: relative;
+  width: 700px;
+  height: auto;
+}
+/* line 31, ../sass/main.scss */
+.project-explorer .project-header-bg {
+  height: 400px;
+  width: 100%;
+  background: url("../img/album-art.jpg");
+  background-position: center center;
+  background-size: cover;
+  -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);
+  -webkit-border-top-left-radius: 35px;
+  -webkit-border-top-right-radius: 35px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 35px;
+  -moz-border-radius-topright: 35px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  overflow: hidden;
+  display: block;
+}
+/* line 43, ../sass/main.scss */
+.project-explorer .project-header {
+  height: 400px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-border-top-left-radius: 35px;
+  -webkit-border-top-right-radius: 35px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius-topleft: 35px;
+  -moz-border-radius-topright: 35px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 2px solid black;
+  box-shadow: inset 1px 1px 40px 0 rgba(0, 0, 0, 0.45);
+  background: rgba(204, 204, 204, 0.3);
+}
+/* line 54, ../sass/main.scss */
+.project-explorer .project-header .project-title {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  font-size: 3em;
+  margin: 260px 0 0 30px;
+}
+/* line 61, ../sass/main.scss */
+.project-explorer .project-header .project-name {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  margin: 0 0 0 60px;
+  font-style: italic;
+}
+/* line 68, ../sass/main.scss */
+.project-explorer .project-header .parental-advisory {
+  float: right;
+  margin: -17px 10px 0 0;
+  height: 49px;
+  width: 72px;
+}
+/* line 76, ../sass/main.scss */
+.project-explorer #projectContent {
+  margin: 0;
+  width: 100%;
+}
+/* line 80, ../sass/main.scss */
+.project-explorer #projectContent .project-menu {
+  margin: 0;
+  width: 15%;
+  padding: 0;
+  background: #ccc;
+  height: 100%;
+}
+/* line 87, ../sass/main.scss */
+.project-explorer #projectContent .project-menu .ui-state-active {
+  width: 98%;
+  transition: width 0.5s ease;
+  border-right: none;
+}
+/* line 93, ../sass/main.scss */
+.project-explorer #projectContent .project-menu li {
+  width: 85%;
+  float: right;
+  transition: width 0.5s ease;
+  background: white;
+  border: 1px solid black;
+}
+/* line 107, ../sass/main.scss */
+.project-explorer #projectContent .project-view {
+  width: 84%;
+  float: right;
+  padding: 10px;
+  background: white;
+  box-sizing: border-box;
+  margin: 4px 0 50px 0;
+  border: 2px solid black;
+}
